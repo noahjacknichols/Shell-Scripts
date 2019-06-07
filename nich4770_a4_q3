@@ -1,0 +1,14 @@
+#!/bin/sh
+file1=$1
+file2=$2
+
+if [ -f "$file2" ]
+then
+	echo "sorry that file already exists"
+fi
+
+if [ ! -f "$file2" ]
+then
+	echo "doin the compoot"
+	cp $1 $2
+fi
